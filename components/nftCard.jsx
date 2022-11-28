@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NFTCard = ({nft}) => {
     const nftContractAddress = nft.contract.address;
     const len = nftContractAddress.length;

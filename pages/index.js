@@ -11,10 +11,11 @@ export default function Home() {
   const [NFTs, setNFTs] = useState([])
 
 
+
+  const api_key = process.env.NEXT_PUBLIC_ALCHEMY_API;
   const fetchNFTs = async () => {
     let nfts;
     console.log("fetching nfts");
-    const api_key = "A8A1Oo_UTB9IN5oNHfAc2tAxdR4UVwfM"
     const baseURL = `https://eth-mainnet.g.alchemy.com/v2/${api_key}/getNFTs/`;
     var requestOptions = {
       method: 'GET'

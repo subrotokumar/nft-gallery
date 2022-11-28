@@ -13,7 +13,7 @@ const NFTCard = ({nft}) => {
                 <div className="">
                     <h2 className="text-xl text-gray-800">{nft.title}</h2>
                     <p className="text-gray-600">Id: {parseInt(nft.id.tokenId)}</p>
-                    <p className="text-gray-600" >{address} <a href={`https://etherscan.io/token/${nftContractAddress}`} className="border border-black rounded-sm px-[4px] mx-[4px]" target="_blank">↗️ Etherscan </a></p>
+                    <p className="text-gray-600" >{address} <a href={`https://etherscan.io/token/${nftContractAddress}`} className="border border-black rounded-sm px-[4px] mx-[4px]" target="_blank" rel="noreferrer">↗️ Etherscan </a></p>
                 </div>
 
                 <div className="flex-grow mt-2">
